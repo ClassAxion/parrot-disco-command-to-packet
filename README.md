@@ -1,3 +1,8 @@
+# Before you start
+
+-   Install NodeJS v14
+-   Type `npm i` to install all dependencies
+
 # Generate packet
 
 -   In `command.json` you have to write your packet in JSON format.

@@ -4,7 +4,7 @@ import fs from 'fs';
 export default function networkFrameGenerator(cmd, type?, id?): Buffer {
     const networkSeqFilePath = 'network.json';
 
-    const seq = fs.existsSync(networkSeqFilePath) ? JSON.parse(fs.readFileSync(networkSeqFilePath, 'utf-8')) : [];
+    const seq = []; //fs.existsSync(networkSeqFilePath) ? JSON.parse(fs.readFileSync(networkSeqFilePath, 'utf-8')) : [];
 
     const hlen = 7,
         buf = Buffer.alloc(hlen);
